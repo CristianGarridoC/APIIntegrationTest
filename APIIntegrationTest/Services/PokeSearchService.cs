@@ -26,7 +26,7 @@ namespace APIIntegrationTest.Services
             var validationResult = await _validator.ValidateAsync(pokeSearchRequest);
             if (!validationResult.IsValid)
             {
-                return new PokeSearchErrorResult(validationResult.Errors.Select(e => e.ErrorMessage).ToList());
+                return new PokeSearchErrorResult(validationResult.Errors.Select(e  => e.ErrorMessage).ToList());
             }
 
             try

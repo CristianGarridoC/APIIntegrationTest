@@ -22,6 +22,15 @@
       <Content Include="appsettings.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+      <None Remove="APIIntegrationTest.Unit.Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="APIIntegrationTest.Unit.Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="APIIntegrationTest.Unit.Test\**" />
     </ItemGroup>
 
 </Project>
